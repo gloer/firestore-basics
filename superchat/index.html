@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Superchat</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <form id="messageForm">
+        <input type="text" id="messageText" placholder="Hva sier du?">
+        <button type="submit">GO</button>
+    </form>
+
+    <div id="messageDiv"></div>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBIPw_Tb5KPOwnHnVrC6oXUqmu2_NuIdRU",
+        authDomain: "frontend-og-databaser.firebaseapp.com",
+        databaseURL: "https://frontend-og-databaser.firebaseio.com",
+        projectId: "frontend-og-databaser",
+        storageBucket: "frontend-og-databaser.appspot.com",
+        messagingSenderId: "38294432980",
+        appId: "1:38294432980:web:130ca1c7440ec63645df41"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src='./index.js'></script>
+</body>
+</html>
